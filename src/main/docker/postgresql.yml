@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gatewayservice-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/gatewayservice/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=gatewayservice
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
